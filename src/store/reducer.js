@@ -1,7 +1,7 @@
 // src/store/reducer.js
 const initialState = {
   user: {
-    name: "Helva",
+    name: "Sjouke",
     favorites: [161235, 357311],
   },
   pizzas: [

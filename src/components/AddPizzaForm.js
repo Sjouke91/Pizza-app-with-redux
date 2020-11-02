@@ -1,6 +1,7 @@
 // src/components/AddPizzaForm.js
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import "./AddPizzaForm.scss";
 
 export default function AddPizzaForm() {
   const dispatch = useDispatch();
@@ -29,9 +30,9 @@ export default function AddPizzaForm() {
 
   return (
     <div>
-      <form onSubmit={submit}>
+      <form className="pizzaForm" onSubmit={submit}>
         <h2>Add a new pizza</h2>
-        <p>
+        <div>
           <label>
             Name:{" "}
             <input
@@ -40,8 +41,8 @@ export default function AddPizzaForm() {
               onChange={(e) => set_name(e.target.value)}
             />
           </label>
-        </p>
-        <p>
+        </div>
+        <div>
           <label>
             Description:{" "}
             <input
@@ -50,6 +51,8 @@ export default function AddPizzaForm() {
               onChange={(e) => set_description(e.target.value)}
             />
           </label>
+        </div>
+        <div>
           <label>
             imageurl:{" "}
             <input
@@ -58,7 +61,7 @@ export default function AddPizzaForm() {
               onChange={(e) => set_url(e.target.value)}
             />
           </label>
-        </p>
+        </div>
         <p>
           <button type="submit">Add this pizza!</button>
         </p>

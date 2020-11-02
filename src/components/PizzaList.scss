@@ -1,8 +1,9 @@
 .parent {
   ul {
     display: flex;
-
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 
     @media (max-width: 500px) {
       display: flex;
@@ -19,13 +20,13 @@
       overflow: hidden;
       margin: 10px;
       padding: 10px;
-      min-width: 300px;
+      width: 350px;
       min-height: 200px;
       background-color: rgb(211, 211, 211);
       border-radius: 5px;
 
       img {
-        height: 400px;
+        height: 500px;
         position: absolute;
         top: 0;
         left: 0;
